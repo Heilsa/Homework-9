@@ -25,4 +25,5 @@ public class Book {
     public String toString() {
         return "Название книги: '" + nameOfBook + "', Автор: " + author.toString() + ", Год издания: " + yearOfCreate;
     }
+
 }

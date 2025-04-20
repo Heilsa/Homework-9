@@ -6,4 +6,5 @@ public class MainV2 {
         book2.setYearOfCreate(1221);
         System.out.println("Год книги был изменён на = " + book2.getYearOfCreate());
     }
+
 }
