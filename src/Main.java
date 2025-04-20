@@ -1,8 +1,12 @@
 public class Main {
+    @Override
+    public String toString() {
+        return "author";
+    }
+
     public static void main(String[] args) {
-        Book book = new Book("Án ótta", "Fólk", 1009);
-        Author author = new Author("Скальд", "Вальгаллович");
-        System.out.println("Название книги,автор и год издания = " + book.nameOfBook + " , " + book.author + " , " + book.yearOfCreate + " год");
-        System.out.println("Имя и фамилия автора = " + author.authorName + " " + author.authorLastname);
+        Author author = new Author("Скальд", "Вальгаллов");
+        Book book = new Book("Án ótta", author, 1009);
+        System.out.println(book);
     }
 }

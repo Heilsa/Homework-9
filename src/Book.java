@@ -1,28 +1,28 @@
 public class Book {
-    public String nameOfBook;
-    public String author;
-    public int yearOfCreate;
+    private String nameOfBook;
+    private Author author;
+    private int yearOfCreate;
 
-    public Book(String nameOfBook, String author, int yearOfCreate) {
+    public Book(String nameOfBook, Author author, int yearOfCreate) {
         this.nameOfBook = nameOfBook;
         this.author = author;
         this.yearOfCreate = yearOfCreate;
+    }
 
+    public String getNewNameOfBook() {
+        return nameOfBook;
     }
-    public String getNameOfBook() {
-        return this.nameOfBook;
-    }
-    public String getAuthor() {
-        return this.author;
-    }
+
     public int getYearOfCreate() {
-        return this.yearOfCreate;
+        return yearOfCreate;
     }
+
     public void setYearOfCreate(int yearOfCreate) {
         this.yearOfCreate = yearOfCreate;
     }
 
-    public void setNameOfBook(String nameOfBook) {
-        this.nameOfBook = nameOfBook;
+    @Override
+    public String toString() {
+        return "Название книги: '" + nameOfBook + "', Автор: " + author.toString() + ", Год издания: " + yearOfCreate;
     }
 }

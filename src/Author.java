@@ -1,15 +1,18 @@
 public class Author {
-    public String authorName;
-    public String authorLastname;
+    private String authorName;
+    private String authorLastname;
 
     public Author(String authorName, String authorLastname) {
         this.authorName = authorName;
         this.authorLastname = authorLastname;
     }
-    public String getAuthorName() {
-        return this.authorName;
+
+    public String getNewAuthorLastname() {
+        return authorLastname;
     }
-    public String getAuthorLastname() {
-        return this.authorLastname;
+
+    @Override
+    public String toString() {
+        return authorName + " " + authorLastname;
     }
 }
