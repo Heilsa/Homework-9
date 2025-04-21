@@ -9,7 +9,7 @@ public class Book {
         this.yearOfCreate = yearOfCreate;
     }
 
-    public String getNewNameOfBook() {
+    public String getNameOfBook() {
         return nameOfBook;
     }
 
@@ -17,8 +17,13 @@ public class Book {
         return yearOfCreate;
     }
 
+
     public void setYearOfCreate(int yearOfCreate) {
         this.yearOfCreate = yearOfCreate;
+    }
+
+    public void getAuthor() {
+        this.author = author;
     }
 
     @Override
