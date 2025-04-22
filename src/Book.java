@@ -22,8 +22,8 @@ public class Book {
         this.yearOfCreate = yearOfCreate;
     }
 
-    public void getAuthor() {
-        this.author = author;
+    public Author getAuthor() {
+        return this.author;
     }
 
     @Override
